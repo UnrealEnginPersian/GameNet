@@ -1,1 +1,1 @@
-# GameNet
+Only Ai :)
