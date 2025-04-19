@@ -1,0 +1,98 @@
+/* فونت‌ها و تنظیمات کلی */
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+    background-color: #0d0d0d; /* رنگ تیره برای گیمینگ */
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* کانتینر اصلی */
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 30px #0ff;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* عنوان‌ها */
+  h1, h2 {
+    text-align: center;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+  }
+  
+  /* دکمه‌ها */
+  button {
+    background: linear-gradient(145deg, #1e1e2f, #2e2e45);
+    border: none;
+    color: #0ff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 0 20px #00f6ff, 0 0 10px #00f6ff inset;
+  }
+  
+  /* فرم */
+  form input, form button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1c1c2c;
+    color: #0ff;
+    box-shadow: 0 0 10px #00f6ff inset;
+  }
+  
+  form button {
+    background: #00f6ff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* استایل سیستم‌ها */
+  .system {
+    margin: 15px 0;
+    padding: 15px;
+    background: linear-gradient(to right, #1e1e2f, #2e2e45);
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00f6ff;
+    animation: popIn 0.5s ease forwards;
+    transform: scale(0.98);
+  }
+  
+  .system:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #0ff, 0 0 10px #0ff inset;
+  }
+  
+  /* انیمیشن‌ها */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  body {
+    background-image: url('../Assets/image/hex-pattern.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
